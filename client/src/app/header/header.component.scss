@@ -1,0 +1,40 @@
+.nav {
+  font-family: "Open Sans";
+  background: rgba(60, 0, 100, .8);
+  height: 11vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  box-shadow: 0 0 10px #fff;
+
+  &-background{
+    background: #fff;
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+  }
+  &-logo {
+    color:#666;
+    font-weight: 700;
+    font-size: 1.85rem;
+    font-family: "Alegreya Sans SC";
+    cursor: pointer;
+    outline: none;
+  }
+  &-inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 15%;
+  }
+  &-inner a {
+    color: #000;
+    font-weight: 700;
+    font-size: 0.95rem;
+    padding: 0 10px;
+    text-decoration: none;
+  }
+}

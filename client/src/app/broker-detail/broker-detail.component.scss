@@ -1,0 +1,47 @@
+.broker{
+  font-family: "Open Sans";
+  padding: 2%;
+  margin: 11vh auto;
+  //min-height: 89vh;
+  width: 70%;
+  background: rgba(255,255,255,1);
+  display: flex;
+  flex-direction: column;
+  &-header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  &-name{
+    letter-spacing: 2px;
+    color: #406;
+    font-size: 1.75rem;
+  }
+  &-bewertung_header{
+    color: #09f;
+    font-weight: 700;
+    font-size: 1.15rem;
+  }
+  &-registration{
+    margin-top: 2vh;
+    float: right;
+    padding: 7px 10px;
+    border-radius: 4px;
+    width: 160px;
+    text-align: center;
+    background: #0b0;
+    color: #fff;
+    font-size: 0.9rem;
+    font-weight: 700;
+    cursor: pointer;
+    box-shadow: 0 3px 7px #888;
+  }
+  &-bewertung h4{
+    margin-top: 1.5vh;
+  }
+  &-bewertung span{
+    font-weight: 600;
+    font-size: 0.9rem;
+    margin-left: 1vw;
+  }
+}

@@ -1,0 +1,33 @@
+<div class="broker-home-text-wrap">
+  <h3 class="broker-home-text">
+    Торгуйте только у лучших брокеров.<br>
+    Посмотрите сравнение и наши тесты брокеров, и выберите подходящие для себя.
+  </h3>
+</div>
+
+<div class="brokerlist">
+
+  <div class="brokerlist__table-head">
+    <span class="brokerlist__table-head--rang">Ранг</span>
+    <span class="brokerlist__table-head--name">Брокер</span>
+    <span class="brokerlist__table-head--assessment">Оценка</span>
+    <span class="brokerlist__table-head--button">Перейти к брокеру</span>
+  </div>
+
+  <div class="brokerlist-item" *ngFor="let broker of brokers; index as index">
+    <div class="brokerlist-item__rank">
+      <span>{{ index+1 }}</span>
+    </div>
+    <div class="brokerlist-item__name">
+      <span [routerLink]="['/brokerdetail', broker.id]">{{ broker.name }}</span>
+      <a [routerLink]="['/brokerdetail', broker.id]">подробнее...</a>
+    </div>
+    <div class="brokerlist-item__assessment">
+      <span>{{broker.assessment}}</span>
+    </div>
+    <div class="brokerlist-item__button" href="" (click)="goToBroker(broker)">
+      <span>> НА САЙТ БРОКЕРА </span>
+    </div>
+  </div>
+
+</div>

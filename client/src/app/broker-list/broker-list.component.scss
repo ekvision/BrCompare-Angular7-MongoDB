@@ -1,0 +1,153 @@
+.broker-home-text-wrap {
+  font-family: "Open Sans";
+  width: 72%;
+  min-height: 30vh;
+  margin: 0 auto;
+  margin-top: 21vh;
+  color: #fff;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  //border-top: 1px solid #999;
+  //border-bottom: 1px solid #999;
+  //border-radius: 5px;
+  //background: rgba(0,0,0, 0.5);
+  h3 {
+    padding: 0vh 4vw;
+    width: 94%;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    text-align: center;
+    letter-spacing: 2px;
+    line-height: 40px;
+    font-size: 1.7rem;
+    font-weight: 600;
+  }
+}
+.brokerlist {
+  font-family: "Open Sans";
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 10vh auto;
+  width: 72%;
+
+  &__table-head{
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    align-items: center;
+    color: black;
+    font-weight: 600;
+    font-size: 0.8rem;
+    background: #fff;
+    border-left: 1px solid #999;
+    border-right: 1px solid #999;
+    height: 4vh;
+  }
+  &__table-head--rang{
+    width: 10%;
+    display: flex;
+    justify-content: space-around;
+    border-right: 1px solid #090;
+    text-align: center;
+  }
+  &__table-head--name{
+    display: flex;
+    justify-content: space-around;
+    width: 30%;
+    border-right: 1px solid #090;
+    text-align: center;
+  }
+  &__table-head--assessment{
+    display: flex;
+    justify-content: space-around;
+    width: 20%;
+    border-right: 1px solid #090;
+    text-align: center;
+  }
+  &__table-head--button{
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    width: 40%;
+  }
+
+  &-item {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background: rgba(0, 30, 40, 0.7);
+    height: 90px;
+    color: #fff;
+    font-weight: 600;
+    border: 1px solid #777;
+    border-top: none;
+  }
+  &-item:nth-child(2n){
+    background: rgba(20,0,50,0.7);
+  }
+  &-item__rank{
+    width: 10%;
+    font-weight: 500;
+    display: flex;
+    justify-content: space-around;
+    font-size: 1.2rem;
+
+  }
+  &-item__name{
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    font-size: 1.3rem;
+    letter-spacing: 1px;
+    span{
+      outline: none;
+      cursor: pointer;
+    }
+    a{
+      color: #09f;
+      font-size: 0.82rem;
+      font-weight: 500;
+      letter-spacing: 0;
+    }
+    :hover{
+      color: #0c0;
+    }
+  }
+  &-item__assessment{
+    width: 20%;
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    font-size: 1rem;
+    font-weight: 500;
+  }
+  &-item__button{
+    width: 40%;
+    display: flex;
+    justify-content: space-around;
+  }
+  &-item__button span{
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    background: #090;
+    color: #fff;
+    padding: 6px 0;
+    font-size: 0.86rem;
+    font-weight: 600;
+    width: 150px;
+    border-radius: 3px;
+    cursor: pointer;
+    box-shadow: 0 1px 8px #888;
+    &:hover{
+      box-shadow: 0 1px 12px #ccc;
+      //background: #070;
+    }
+  }
+}
